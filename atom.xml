@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxy418.github.io/</id>
     <title>Lxy</title>
-    <updated>2020-02-06T07:43:02.342Z</updated>
+    <updated>2020-02-06T07:45:04.007Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxy418.github.io/"/>
     <link rel="self" href="https://lxy418.github.io/atom.xml"/>
@@ -15,17 +15,19 @@
         <link href="https://lxy418.github.io/post/ru-he-pa-chong">
         </link>
         <updated>2020-02-06T07:05:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>😊***爬虫四步骤：<br>
+        <summary type="html"><![CDATA[<p>😊<br>
+<em><strong>爬虫四步骤：<br>
 1.获取数据<br>
 2.解析数据<br>
 3.提取数据<br>
-4.存储数据***</p>
+4.存储数据</strong></em></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>😊***爬虫四步骤：<br>
+        <content type="html"><![CDATA[<p>😊<br>
+<em><strong>爬虫四步骤：<br>
 1.获取数据<br>
 2.解析数据<br>
 3.提取数据<br>
-4.存储数据***</p>
+4.存储数据</strong></em></p>
 <!-- more -->
 <h1 id="1获取数据">1.获取数据：</h1>
 <pre><code>import requests

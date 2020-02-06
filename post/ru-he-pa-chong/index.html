@@ -31,30 +31,13 @@
       
         <div class="animated fadeInLeft" style="animation-delay: 0.4s">
           <p class="my-4 text-gray-600 font-light hidden lg:block">
-            
+            文章目录
           </p>
-          <div class="animated fadeInLeft social-container hidden lg:block" style="animation-delay: 0.6s">
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
-              
-            
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li><a href="#1%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE">1.获取数据：</a></li>
+</ul>
+
           </div>
         </div>
       
@@ -98,57 +81,82 @@
 </div>
 <div class="mask" onclick="closeMenu()">
 </div>
-      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4">
-        <h2 class="text-lg text-gray-700 mb-8">
-          <i class="remixicon-archive-line"></i> 文章归档
-        </h2>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">如何爬虫</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2020-02-06 / 1 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p>😊***爬虫四步骤：<br>
+1.获取数据<br>
+2.解析数据<br>
+3.提取数据<br>
+4.存储数据***</p>
+<!-- more -->
+<h1 id="1获取数据">1.获取数据：</h1>
+<pre><code>import requests
+#引入requests库
+
+res = requests.get('URL')
+#requests.get是在调用requests库中的get()方法，它向服务器发送了一个请求，括号里的参数是你需要的数据所在的网址，然后服务器对请求作出了响应。
+#我们把这个响应返回的结果Response赋值在变量res上。
+</code></pre>
+<!-- more -->
+<p>1.0 Response 对象常用属性</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th style="text-align:center">response.status_code</th>
+<th style="text-align:center">response.content</th>
+<th style="text-align:center">response.text</th>
+<th style="text-align:center">response.encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作用</td>
+<td style="text-align:center">检查请求是否成功</td>
+<td style="text-align:center">把response对象转换成二进制数据</td>
+<td style="text-align:center">把response对象转换成字符串数据</td>
+<td style="text-align:center">定义response对象的编码</td>
+</tr>
+</tbody>
+</table>
+<p>e.g.:</p>
+<pre><code>import requests 
+res = requests.get('https://res.pandateacher.com/2018-12-18-10-43-07.png') 
+print(res.status_code)
+#打印变量res的响应状态码，以检查请求是否成功
+</code></pre>
+<!-- more -->
+<p>1.1 常见响应状态码解释：<br>
+<img src="https://lxy418.github.io//post-images/1580974625203.png" alt="" loading="lazy"></p>
+<!-- more -->
+
+        </div>
+
         
 
-        <div class="archives-container">
+
+        <div class="flex justify-between py-8">
           
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="remixicon-map-pin-time-line"></i>
-              2020
-            </h2>
-            
-              
-                <a href="https://lxy418.github.io/post/ru-he-pa-chong" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    如何爬虫
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2020-02-06</div>
-              
-            
-              
-            
+
           
-            <h2 class="text-gray-600 py-4 animated fadeIn">
-              <i class="remixicon-map-pin-time-line"></i>
-              2018
-            </h2>
-            
-              
-            
-              
-                <a href="https://lxy418.github.io/post/hello-gridea" class="post">
-                  <h2 class="inline-block font-bold text-lg post-title animated fadeIn">
-                    Hello Gridea
-                  </h2>
-                </a>
-                <div class="text-sm font-light mt-3 mb-6 text-gray-400 animated fadeInDown" style="animation-delay: 0.4s">2018-12-12</div>
-              
-            
+            <div class="next-post">
+              <a href="https://lxy418.github.io/post/hello-gridea">
+                <h3 class="post-title">
+                  Hello Gridea
+                  <i class="remixicon-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
           
         </div>
 
-        <div>
-          <div class="pagination-container animated fadeIn">
-  
-  
-</div>
+        
 
-        </div>
       </div>
     </div>
 

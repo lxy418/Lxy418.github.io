@@ -2,13 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxy418.github.io/</id>
     <title>Lxy</title>
-    <updated>2020-02-06T04:22:01.326Z</updated>
+    <updated>2020-02-06T07:41:57.697Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxy418.github.io/"/>
     <link rel="self" href="https://lxy418.github.io/atom.xml"/>
     <logo>https://lxy418.github.io/images/avatar.png</logo>
     <icon>https://lxy418.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Lxy</rights>
+    <entry>
+        <title type="html"><![CDATA[如何爬虫]]></title>
+        <id>https://lxy418.github.io/post/ru-he-pa-chong</id>
+        <link href="https://lxy418.github.io/post/ru-he-pa-chong">
+        </link>
+        <updated>2020-02-06T07:05:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>😊***爬虫四步骤：<br>
+1.获取数据<br>
+2.解析数据<br>
+3.提取数据<br>
+4.存储数据***</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>😊***爬虫四步骤：<br>
+1.获取数据<br>
+2.解析数据<br>
+3.提取数据<br>
+4.存储数据***</p>
+<!-- more -->
+<h1 id="1获取数据">1.获取数据：</h1>
+<pre><code>import requests
+#引入requests库
+
+res = requests.get('URL')
+#requests.get是在调用requests库中的get()方法，它向服务器发送了一个请求，括号里的参数是你需要的数据所在的网址，然后服务器对请求作出了响应。
+#我们把这个响应返回的结果Response赋值在变量res上。
+</code></pre>
+<!-- more -->
+<p>1.0 Response 对象常用属性</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th style="text-align:center">response.status_code</th>
+<th style="text-align:center">response.content</th>
+<th style="text-align:center">response.text</th>
+<th style="text-align:center">response.encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>作用</td>
+<td style="text-align:center">检查请求是否成功</td>
+<td style="text-align:center">把response对象转换成二进制数据</td>
+<td style="text-align:center">把response对象转换成字符串数据</td>
+<td style="text-align:center">定义response对象的编码</td>
+</tr>
+</tbody>
+</table>
+<p>e.g.:</p>
+<pre><code>import requests 
+res = requests.get('https://res.pandateacher.com/2018-12-18-10-43-07.png') 
+print(res.status_code)
+#打印变量res的响应状态码，以检查请求是否成功
+</code></pre>
+<!-- more -->
+<p>1.1 常见响应状态码解释：<br>
+<img src="https://lxy418.github.io//post-images/1580974625203.png" alt="" loading="lazy"></p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://lxy418.github.io/post/hello-gridea</id>
